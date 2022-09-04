@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background:rgb(25, 13, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login > h1{
+    color: #77ffc0;
+}
+.card-login{
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgb(20,13,37);
+    border: solid 2px rgb(63, 9, 211);
+    border-radius: 4%;
+    box-shadow: 2px -2px 3px rgb(39, 162, 190), -2px 2px 3px rgb(39, 162, 190);
+    animation: shadowanime 3s infinite ease;
+}
+.card-login > h1{
+    
+    color: rgb(1, 201, 188);
+    font-weight: 800;
+    margin: 0;
+}
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.textfield > input:hover{
+    
+    
+   
+    transition: 0.8s;
+    background: rgba(10,15,30,4);
+    animation: animate 1s infinite;
+    
+}
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 13px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow:  0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+    color:rgb(1, 201, 188);
+    background: rgb(20,13,45);
+    border: solid 1px rgb(63, 9, 211);
+    border-radius: 20px;
+}
+
+.textfield > label{
+    color: rgb(39, 162, 190);
+    margin-bottom: 10px;
+}
+.textfield > input::placeholder{
+    color: #f0ffffde;
+}
+.btnlogin{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+    background: rgb(9, 211, 204);
+    animation: animate 1s infinite;
+}
+.left-login > img{
+    width: 35vw;
+    
+}
+.left-login > h1{
+    font-size: 3vw;
+}
+@keyframes shadowanime{
+    0%{
+        box-shadow: -2px 2px 1x rgb(39, 162, 190), 2px -2px 1x rgb(39, 162, 190);
+    }
+    25%{
+        box-shadow: -2px 3px 2px rgb(201, 1, 174), 3px -2px 2px rgb(201, 1, 174);
+    }
+    50%{
+        box-shadow: -2px 3px 3px rgb(201, 1, 174), 3px -2px 3px rgb(201, 1, 174);
+    }
+    75%{
+        box-shadow: -2px 3px 2px rgb(201, 1, 174), 3px -2px 2px rgb(201, 1, 174);
+    }
+    100%{
+        box-shadow: -2px 2px 1x rgb(39, 162, 190), 2px -2px 1x rgb(39, 162, 190);
+    }
+}
+@keyframes animate{
+    0%{
+        border: solid 1px rgb(166, 9, 190);
+    }
+    50%{
+        border: solid 1px rgb(9, 211, 204);
+    }
+    100%{
+        border: solid 1px rgb(166, 9, 190);
+    }
+}

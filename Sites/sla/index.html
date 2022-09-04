@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="tudo">
+        
+        <div id="esquerda">
+            <div id="box">
+                <div id="info">
+                    <form action="Enviar">
+                           
+                        <h1>Primeiro número</h1>
+                        <label for="">
+                        <input type="number" name="Primeiro número" id="firstnum" class = "n"> </label>
+
+                        <h1>Segundo número</h1>
+                        <label for=""> <input type="number" name="Segundo número" id="secnum" class="n"> </label>
+
+                        <input type="button" value="Enviar!">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="direita"></div>
+    </div>
+    <style>
+        body{
+            background: rgb(16, 15, 15)
+        }
+        *{
+           margin: 0;
+            box-sizing: border-box;
+        }
+        #info > input{
+            margin: 20;
+        }
+        .n{
+            border: solid 2px red;
+            border-style: none;
+            height: 20px;
+            border-radius: 10%;
+            border-color: rgb(39, 33, 33);
+        }
+        h1{
+            font-size: 12pt;
+            color: white;
+        }
+        #info{
+            width: 90%;
+            height: 90%;
+        }
+        #box{
+            
+            width: 70%;
+            height: 70%;
+        }
+        #tudo{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        #esquerda{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 50vw;
+        }
+        #direita{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 50vw;
+        }
+    </style>
+</body>
+</html>

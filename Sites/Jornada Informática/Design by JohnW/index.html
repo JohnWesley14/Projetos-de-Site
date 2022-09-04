@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Site</title>
+</head>
+<body>
+    <div id="all">
+        <nav>
+            <img src="computer.png" id="imagem">
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" target="_blank" >Javascript</a></li>
+
+                <li><a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank" >HTML</a></li>
+
+                <li><a href="https://www.youtube.com/watch?v=vPNIAJ9B4hg&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s" target="_blank" >CSS</a></li>
+
+                <li><a href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6" target="_blank" >Python</a></li>
+            </ul>
+        </nav>
+        <div id="info" class="info">
+            <h1>Aprenda sobre <br> essas tecnologias!</h1>
+            <p>Este site tem como objetivo mostrar formas de estudar sobre essas linguagens. <br> Venha aprender mais sobre elas!</p>
+            <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo/playlists" target = "_blank" >Curso em Vídeo</a>
+        </div>
+        <div id="img-box">
+            <img src="cyborg-animate.svg" id="frente-imagem">
+        </div>
+    </div>
+    <script>
+        const sr = ScrollReveal({
+           origin: 'top',
+           distance: '600px',
+           duration: 1700,
+           delay: 300,
+        })
+        sr.reveal('.info')
+        sr.reveal('nav')
+        sr.reveal('#frente-imagem', {origin: 'left'})
+    </script>
+</body>
+</html>
